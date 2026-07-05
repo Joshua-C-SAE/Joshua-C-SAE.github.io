@@ -22,8 +22,19 @@
         <!--Page Header-->
         <header>
             <h1>Joshua Clouton, Collection of Works</h1>
-            <P> Portfolio and Showreels </P>
+            <P> Portfolio and Showreels.  Email: joshclouton@gmail.com </P>
         </header>
+
+        <!--Welcome Section-->
+        <section class="container" style="border: 1.5px solid #000000; margin-top: 10px; margin-bottom: 10px;">
+            <h2>
+                Welcome to My Portfolio!
+            </h2>
+
+            <p>
+                Hello, My name is Joshua, or Josh, and i'm an aspiring game developer and programmer. You can find some examples of my work here in this portfolio. This will be expanded with additional works over time.
+            </p>
+        </section>
 
         <!--Navigation Bar-->
         <nav>
@@ -53,20 +64,12 @@
 
         <!--Container used for spacing-->
         <main class="container" id="portfolio">
-            <!--Portfolio Title Section-->
-            <section>
-                <h2>
-                    Welcome to My Portfolio!
-                </h2>
-
-                <p>
-                    Hello, My name is Joshua, or Josh, and i'm an aspiring game developer and programmer. You can find some examples of my work here in this portfolio. This Portfolio will be expanded over time with additional works.
-                </p>
-            </section>
+            <h1 style="background-color: #222222; text-align: center; padding: 10px; border-radius: 12px; border: 1.5px solid #000000; margin-top: -10px;">
+                Portfolio
+            </h1>
 
             <!--Portfolio Gallery-->
             <div class="gallery">
-
                 <!--Portfolio Item 1-->
                 <div class="gallery-item">
                     <!--Loads Portfolio Image and Image Pop Up-->
@@ -206,9 +209,15 @@
                         <img class="modal-content" id="previewImage">
                     </div>
                 </div>
+            </div>
+            
+            <section class="container" id="showreel" style="scroll-margin-top: 100px; background: none; box-shadow: none;">
+                <h1 style="background-color: #222222; text-align: center; padding: 10px; border-radius: 12px; border: 1.5px solid #000000;">
+                    Showreels & Documents
+                </h1>
 
                 <!--Showreel Gallery-->
-                <div class="video-container" id="showreel">
+                <div class="video-container">
                     <!--Creates Video Embed-->
                     <video width="640" height="360" controls>
                         <!--Loads Video-->
@@ -221,34 +230,36 @@
                     </video>
                 </div>
 
-                <!--Creates PDF Link Embed-->
-                <a href="portfolio/beatrocity_design_doc.pdf" target="_blank">
-                    <!--Loads PDF Icon-->
-                    <img src="portfolio/PDF_icon.png" class="responsive-img">
-                    <!--Loads PDF Description-->
-                    <div class="desc">Beatrocity Design Document</div>
-                </a>
+                <div class="pdf-container">
+                    <!--Creates PDF Link Embed-->
+                    <a href="portfolio/beatrocity_design_doc.pdf" target="_blank">
+                        <!--Loads PDF Icon-->
+                        <img src="portfolio/PDF_icon.png" class="responsive-img">
+                        <!--Loads PDF Description-->
+                        <div class="desc">Beatrocity Design Document</div>
+                    </a>
 
-                <!--Creates PDF Link Embed-->
-                <a href="portfolio/voxelation_design_doc.pdf" target="_blank">
-                    <!--Loads PDF Icon-->
-                    <img src="portfolio/PDF_icon.png" class="responsive-img">
-                    <!--Loads PDF Description-->
-                    <div class="desc">Voxelation Design Document</div>
-                </a>
+                    <!--Creates PDF Link Embed-->
+                    <a href="portfolio/voxelation_design_doc.pdf" target="_blank">
+                        <!--Loads PDF Icon-->
+                        <img src="portfolio/PDF_icon.png" class="responsive-img">
+                        <!--Loads PDF Description-->
+                        <div class="desc">Voxelation Design Document</div>
+                    </a>
 
-                <!--Creates PDF Link Embed-->
-                <a href="portfolio/cyclepaths_design_doc.pdf" target="_blank">
-                    <!--Loads PDF Icon-->
-                    <img src="portfolio/PDF_icon.png" class="responsive-img">
-                    <!--Loads PDF Description-->
-                    <div class="desc">Cyclepaths Design Document</div>
-                </a>
-            </div>
+                    <!--Creates PDF Link Embed-->
+                    <a href="portfolio/cyclepaths_design_doc.pdf" target="_blank">
+                        <!--Loads PDF Icon-->
+                        <img src="portfolio/PDF_icon.png" class="responsive-img">
+                        <!--Loads PDF Description-->
+                        <div class="desc">Cyclepaths Design Document</div>
+                    </a>
+                </div>
 
+            </section>
 
             <!--Contact Form-->
-            <section class="formSection" id="contact-me">
+            <section class="formSection" id="contact-me" style="margin-top: 30px;">
                 <h2>Contact Me:</h2>
                 <p>
                     Feel free to reach out to me if you have feedback about my work or just want to get in contact!
@@ -288,7 +299,7 @@
 
         <footer>
             <p>
-                Joshua Clouton 2026, joshclouton@gmail.com
+                Joshua Clouton &copy; 2026
             </p>
         </footer>
 
