@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+         <!--Responiveness Tag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Tab Title-->
+        <title>Joshua Clouton Portfolio</title>
+
+        <!--Typography (Poppins)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!--CSS Refence-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--Page Header-->
+        <header>
+            <h1>Joshua Clouton, Collection of Works</h1>
+            <P> Portfolio and Showreels </P>
+        </header>
+
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <!--Link to Portfolio-->
+                <li>
+                    <a href="#portfolio">
+                        Portfolio
+                    </a>
+                </li>
+                
+                <!--Link to Showreel-->
+                <li>
+                    <a href="#showreel">
+                        Showreels
+                    </a>
+                </li>
+
+                <!--Link to Contact Page-->
+                <li>
+                    <a href="#contact-me">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Container used for spacing-->
+        <main class="container" id="portfolio">
+            <!--Portfolio Title Section-->
+            <section>
+                <h2>
+                    Welcome to My Portfolio!
+                </h2>
+
+                <p>
+                    Hello, My name is Joshua, or Josh, and i'm an aspiring game developer and programmer. You can find some examples of my work here in this portfolio.
+                </p>
+            </section>
+
+            <!--Portfolio Gallery-->
+            <div class="gallery">
+
+                <!--Portfolio Item 1-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-1.png" alt="Laser Colt 1911 Front view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Front View of Laser Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Portfolio Item 2-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-2.png" alt="Laser Colt 1911 Side view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Side View of Laser Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Portfolio Item 3-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-3.png" alt="Laser Colt 1911 Angled view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Angled View of Laser Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Portfolio Item 4-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-8.png" alt="Colt 1911 Side view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Side View of Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Portfolio Item 5-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-9.png" alt="Colt 1911 Front view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Front View of Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Portfolio Item 6-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-10.png" alt="Colt 1911 Angled view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Angled View of Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Portfolio Item 7-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-11.png" alt="Colt 1911 Top view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Top View of Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Portfolio Item 8-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-12.png" alt="Colt 1911 Front view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Angled View of Untextured Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Portfolio Item 9-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-13.png" alt="Colt 1911 Front view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Front View of Untextured Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Portfolio Item 10-->
+                <div class="gallery-item">
+                    <!--Loads Portfolio Image and Image Pop Up-->
+                    <img src="portfolio/folio-14.png" alt="Colt 1911 Front view" width="600" height="400" style="cursor: pointer;" onclick="openPreview(this.src)">
+                    <!--Loads Image Description-->
+                    <div class="desc">Side View of Untextured Colt 1911</div>
+                    <!--Loads Pop Up Closing-->
+                    <div id="previewModal" class="modal">
+                        <!--Adds Close Button to Pop Up Window-->
+                        <span class="close-btn" onclick="closePreview()">&times;</span>
+                        <img class="modal-content" id="previewImage">
+                    </div>
+                </div>
+
+                <!--Showreel Gallery-->
+                <div class="video-container" id="showreel">
+                    <!--Creates Video Embed-->
+                    <video width="640" height="360" controls>
+                        <!--Loads Video-->
+                        <source src="portfolio/showreel.mp4" type="video/mp4">
+                    </video>
+                    <!--Creates Video Embed-->
+                    <video width="640" height="360" controls>
+                        <!--Loads Video-->
+                        <source src="portfolio/prototype.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!--Creates PDF Link Embed-->
+                <a href="portfolio/beatrocity_design_doc.pdf" target="_blank">
+                    <!--Loads PDF Icon-->
+                    <img src="portfolio/PDF_icon.png" class="responsive-img">
+                    <!--Loads PDF Description-->
+                    <div class="desc">Beatrocity Design Document</div>
+                </a>
+
+                <!--Creates PDF Link Embed-->
+                <a href="portfolio/voxelation_design_doc.pdf" target="_blank">
+                    <!--Loads PDF Icon-->
+                    <img src="portfolio/PDF_icon.png" class="responsive-img">
+                    <!--Loads PDF Description-->
+                    <div class="desc">Voxelation Design Document</div>
+                </a>
+
+                <!--Creates PDF Link Embed-->
+                <a href="portfolio/cyclepaths_design_doc.pdf" target="_blank">
+                    <!--Loads PDF Icon-->
+                    <img src="portfolio/PDF_icon.png" class="responsive-img">
+                    <!--Loads PDF Description-->
+                    <div class="desc">Cyclepaths Design Document</div>
+                </a>
+            </div>
+
+
+            <!--Contact Form-->
+            <section class="formSection" id="contact-me">
+                <h2>Contact Me:</h2>
+                <p>
+                    Feel free to reach out to me if you have feedback about my work or just want to get in contact!
+                </p>
+
+                <!--Create Form-->
+                <form id="contactForm">
+                    <!--Create Form Field-->
+                    <div class="form-group">
+                        <!--Input Field Label (Name)-->
+                        <label for="name">Name</label>
+                        <!--Input Field-->
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                    </div>
+
+                    <!--Create Form Field-->
+                    <div class="form-group">
+                        <!--Input Field Label (Email)-->
+                        <label for="email">Email</label>
+                        <!--Input Field-->
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                    </div>
+
+                    <!--Create Form Field-->
+                    <div class="form-group">
+                        <!--Input Field Label (Message)-->
+                        <label for="message">Message</label>
+                        <!--Input Field-->
+                        <textarea id="message" name="message" rows="5" placeholder="Enter Your Message"></textarea>
+                    </div>
+
+                    <!--Create Submit Button-->
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                Joshua Clouton 2026, joshclouton@gmail.com
+            </p>
+        </footer>
+
+        <!--Load JavaScript-->
+        <script src="script.js"></script>
+    </body>
+</html>

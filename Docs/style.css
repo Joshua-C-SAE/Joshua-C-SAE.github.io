@@ -1,0 +1,352 @@
+/* Box-Sizing for layout Control */
+*{
+    box-sizing: border-box;
+}
+
+/* Typography and Color Scheme */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f7f7f7;
+    line-height: 1.6;
+
+    /* Background Image */
+    background-image: url(portfolio/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #121212;
+}
+ /* Heading Color */
+h1,h2,h3{
+    color: #f0f0f0;
+}
+
+/* Link Styling */
+a{
+    color: #f60;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Header Styling */
+header{
+    color: #f7f7f7;
+    background-color: #292929;
+    padding: 10px;
+    text-align: center;
+
+    /* Header Sticks to Top of Page */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Header Text Styling */
+header h1{
+    color:#f0f0f0;
+    margin-bottom: 10px;
+}
+
+header p{
+    margin: 0;
+    color: #e9ecef;
+}
+
+/* Navigation Bar */
+nav{
+    padding: 10px;
+}
+
+/* Flexbox for Navigation */
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Navigation Button Styling */
+nav a{
+    text-decoration: none;
+    color:#f7f7f7;
+    background: #121212;
+    padding: 10px;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button Styling when Hovered */
+nav a:hover{
+    background: #003d82;
+    text-decoration: none;
+}
+
+/* Main Content Formating */
+main{
+    padding: 20px;
+    scroll-margin-top: 120px; 
+}
+
+/* Container for Improved Readability and Spacing */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style For Section Content Cards */
+section{
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #121212;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #292929;
+
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Formating for Portfolio Gallery */
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Formatting for Individual Portfolio Items */
+div.gallery-item{
+    margin: 5px;
+    border: 1px solid #292929;
+    width: calc(25% - 10px);
+    box-sizing: border-box;
+}
+
+/* Item Styling when Hovered */
+div.gallery-item:hover{
+    border: 1px solid #777;
+}
+
+/* Styling for Item Image */
+div.gallery-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styling for Item Description */
+
+div.gallery-item div.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+/* Styling for the background overlay of preview window*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/*Styling for previewed image */
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* Styling for the close button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f0f0f0;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Styling for the Video Gallery */
+.video-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    scroll-margin-top: 120px;
+}
+
+/* Styling for Individual Videos */
+video {
+    padding: 15px;
+    width: 50%;
+    max-width: 800px;
+    height: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Styling for Footer */
+footer{
+    grid-area: footer;
+    background: #292929;
+    color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Creation of FadeIn Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Adds Styling to Add of Form Box */
+.formSection {
+    border-left: 6px solid #f7f7f7;
+}
+
+/* Styling for the Contact Form */
+#contactForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Styling for the Form Inputs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Styling for Input Labels */
+.form-group label {
+    font-weight: 600;
+    color: #f7f7f7;
+}
+
+/* Styling for the Input Fields */
+.form-group input{
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Styling for Input when in focus */
+.form-group input:focus {
+  outline: none;
+  border-color: #121212;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.226);
+}
+
+/* Styling for the Text Area */
+.form-group textarea{
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Styling for the Text Area when in Focus */
+.form-group textarea:focus {
+  outline: none;
+  border-color: #121212;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.226);
+}
+
+/* Styling for the Send Message Button */
+button {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Poppins", Arial, sans-serif;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Styling for when button is hovered */
+button:hover {
+    background: #003d82;
+}
+
+/* Styling for Additional Images */
+.responsive-img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    padding: 10px;
+}
+/* Styling for Tablets and Phones */
+@media (max-width: 768px) {
+
+    /* Adjust layout of Showreel Gallery */
+    .video-container{
+        flex-direction: column;
+    }
+
+    /* Adjust Size of Showreels */
+    video {
+        width: 100%;
+    }
+
+    /* Adjust layout of Portfolio Gallery */
+    div.gallery {
+        flex-direction: column;
+    }
+
+    /* Adjust Size of Portfolio Items */
+    div.gallery-item {
+        width:100%
+    }
+
+    /* Adjust Size of Additional Images */
+    .responsive-img {
+        max-width: 100px;
+    }
+}
+
+/* Additional Styling for Smaller Phones */
+@media (max-width: 480px) {
+    /* Adjust Scroll */
+    main {
+        scroll-margin-top: 170px;
+    }
+
+    /* Adjust Scroll */
+    .video-container{
+        scroll-margin-top: 170px;
+    }
+
+}
