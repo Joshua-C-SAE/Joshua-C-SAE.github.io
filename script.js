@@ -53,6 +53,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     /* Print the save message to console */
     console.log("Saved user data:", userMessage);
 
+    /* Clear Form once Submitted */
     document.getElementById("contactForm").reset();
   });
 

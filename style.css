@@ -152,6 +152,7 @@ div.gallery-item div.desc{
     text-align: center;
 }
 
+/* Style for PDF Container */
 .pdf-container {
     display: flex;
     gap: 20px;
@@ -160,12 +161,14 @@ div.gallery-item div.desc{
     margin-top: 20px;
 }
 
+/* Style for Anchored Items in Container */
 .pdf-container a {
     text-align: center;
     color: inherit;
     width: 150px;
 }
 
+/* Style for Images in Container */
 .pdf-container img {
     width: 100%;
     height: auto;
@@ -371,6 +374,7 @@ button:hover {
         scroll-margin-top: 200px;
     }
 
+    /* Adjust Scroll */
     .formSection {
         scroll-margin-top: 200px;
     }
