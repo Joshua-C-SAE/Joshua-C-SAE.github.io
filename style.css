@@ -363,12 +363,16 @@ button:hover {
 @media (max-width: 480px) {
     /* Adjust Scroll */
     main {
-        scroll-margin-top: 170px;
+        scroll-margin-top: 200px;
     }
 
     /* Adjust Scroll */
     .video-container{
-        scroll-margin-top: 170px;
+        scroll-margin-top: 200px;
+    }
+
+    .formSection {
+        scroll-margin-top: 200px;
     }
 
 }

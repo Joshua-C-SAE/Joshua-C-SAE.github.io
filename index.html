@@ -37,7 +37,7 @@
         </section>
 
         <!--Navigation Bar-->
-        <nav>
+        <nav style="animation: fadeIn 1s ease-in-out;">
             <ul>
                 <!--Link to Portfolio-->
                 <li>
@@ -64,7 +64,7 @@
 
         <!--Container used for spacing-->
         <main class="container" id="portfolio">
-            <h1 style="background-color: #222222; text-align: center; padding: 10px; border-radius: 12px; border: 1.5px solid #000000; margin-top: -10px;">
+            <h1 style="background-color: #222222; text-align: center; padding: 10px; border-radius: 12px; border: 1.5px solid #000000; margin-top: -10px; animation: fadeIn 1s ease-in-out;">
                 Portfolio
             </h1>
 
@@ -210,53 +210,51 @@
                     </div>
                 </div>
             </div>
-            
-            <section class="container" id="showreel" style="scroll-margin-top: 100px; background: none; box-shadow: none;">
-                <h1 style="background-color: #222222; text-align: center; padding: 10px; border-radius: 12px; border: 1.5px solid #000000;">
+
+            <!--Showreel Gallery-->
+            <div class="video-container" id="showreel">
+                <h1 style="background-color: #222222; text-align: center; padding: 10px; border-radius: 12px; border: 1.5px solid #000000; animation: fadeIn 1s ease-in-out;">
                     Showreels & Documents
                 </h1>
+            
+                <!--Creates Video Embed-->
+                <video width="640" height="360" controls>
+                    <!--Loads Video-->
+                    <source src="portfolio/showreel.mp4" type="video/mp4">
+                </video>
+                <!--Creates Video Embed-->
+                <video width="640" height="360" controls>
+                    <!--Loads Video-->
+                    <source src="portfolio/prototype.mp4" type="video/mp4">
+                </video>
+            </div>
 
-                <!--Showreel Gallery-->
-                <div class="video-container">
-                    <!--Creates Video Embed-->
-                    <video width="640" height="360" controls>
-                        <!--Loads Video-->
-                        <source src="portfolio/showreel.mp4" type="video/mp4">
-                    </video>
-                    <!--Creates Video Embed-->
-                    <video width="640" height="360" controls>
-                        <!--Loads Video-->
-                        <source src="portfolio/prototype.mp4" type="video/mp4">
-                    </video>
-                </div>
+            <div class="pdf-container">
+                <!--Creates PDF Link Embed-->
+                <a href="portfolio/beatrocity_design_doc.pdf" target="_blank">
+                    <!--Loads PDF Icon-->
+                    <img src="portfolio/PDF_icon.png" class="responsive-img">
+                    <!--Loads PDF Description-->
+                    <div class="desc">Beatrocity Design Document</div>
+                </a>
 
-                <div class="pdf-container">
-                    <!--Creates PDF Link Embed-->
-                    <a href="portfolio/beatrocity_design_doc.pdf" target="_blank">
-                        <!--Loads PDF Icon-->
-                        <img src="portfolio/PDF_icon.png" class="responsive-img">
-                        <!--Loads PDF Description-->
-                        <div class="desc">Beatrocity Design Document</div>
-                    </a>
+                <!--Creates PDF Link Embed-->
+                <a href="portfolio/voxelation_design_doc.pdf" target="_blank">
+                    <!--Loads PDF Icon-->
+                    <img src="portfolio/PDF_icon.png" class="responsive-img">
+                    <!--Loads PDF Description-->
+                    <div class="desc">Voxelation Design Document</div>
+                </a>
 
-                    <!--Creates PDF Link Embed-->
-                    <a href="portfolio/voxelation_design_doc.pdf" target="_blank">
-                        <!--Loads PDF Icon-->
-                        <img src="portfolio/PDF_icon.png" class="responsive-img">
-                        <!--Loads PDF Description-->
-                        <div class="desc">Voxelation Design Document</div>
-                    </a>
+                <!--Creates PDF Link Embed-->
+                <a href="portfolio/cyclepaths_design_doc.pdf" target="_blank">
+                    <!--Loads PDF Icon-->
+                    <img src="portfolio/PDF_icon.png" class="responsive-img">
+                    <!--Loads PDF Description-->
+                    <div class="desc">Cyclepaths Design Document</div>
+                </a>
+            </div>
 
-                    <!--Creates PDF Link Embed-->
-                    <a href="portfolio/cyclepaths_design_doc.pdf" target="_blank">
-                        <!--Loads PDF Icon-->
-                        <img src="portfolio/PDF_icon.png" class="responsive-img">
-                        <!--Loads PDF Description-->
-                        <div class="desc">Cyclepaths Design Document</div>
-                    </a>
-                </div>
-
-            </section>
 
             <!--Contact Form-->
             <section class="formSection" id="contact-me" style="margin-top: 30px;">
