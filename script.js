@@ -48,7 +48,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     localStorage.setItem("Message", JSON.stringify(userMessage));
 
     /* Alert the user that their message has been sent */
-    alert(`Thank you, ${name}! Your message has been sent. I'll review it and use it to shape my projects moving forward!`);
+    alert(`Thank you, ${name}! Your message has been sent. I hope to view it as soon as i can!`);
 
     /* Print the save message to console */
     console.log("Saved user data:", userMessage);
