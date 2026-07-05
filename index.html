@@ -65,10 +65,12 @@
         <!--Container used for spacing-->
         <main class="container" id="portfolio">
 
-            <!--Creat Heading-->
-            <h1 style="background-color: #222222; text-align: center; padding: 10px; border-radius: 12px; border: 1.5px solid #000000; margin-top: -10px; animation: fadeIn 1s ease-in-out;">
-                Portfolio
-            </h1>
+            <section style="padding: 5px; background-color: #222;">
+                <!--Creat Heading-->
+                <h1 style="text-align: center;">
+                    Portfolio
+                </h1>
+            </section>
 
             <!--Portfolio Gallery-->
             <div class="gallery">
@@ -212,20 +214,23 @@
                     </div>
                 </div>
             </div>
-
-            <!--Showreel Gallery-->
-            <div class="video-container" id="showreel">
-
-                <!--Create Heading-->
-                <h1 style="background-color: #222222; text-align: center; padding: 10px; border-radius: 12px; border: 1.5px solid #000000; animation: fadeIn 1s ease-in-out;">
+            
+            <section class="section-header" id="showreel">
+             <!--Create Heading-->
+                <h1 class="section-header">
                     Showreels & Documents
                 </h1>
-            
+            </section>
+
+            <!--Showreel Gallery-->
+            <div class="video-container">
+
                 <!--Creates Video Embed-->
                 <video width="640" height="360" controls>
                     <!--Loads Video-->
                     <source src="portfolio/showreel.mp4" type="video/mp4">
                 </video>
+
                 <!--Creates Video Embed-->
                 <video width="640" height="360" controls>
                     <!--Loads Video-->

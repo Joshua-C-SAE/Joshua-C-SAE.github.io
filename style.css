@@ -114,7 +114,6 @@ section{
     background: #121212;
     border-radius: 8px;
     box-shadow: 0 4px 8px #292929;
-
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -159,6 +158,7 @@ div.gallery-item div.desc{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* Style for Anchored Items in Container */
@@ -206,6 +206,15 @@ div.gallery-item div.desc{
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Syling for Section Header for Showreels */
+.section-header {
+    text-align: center; 
+    padding: 5px; 
+    background-color: #222; 
+    margin-top: 20px; 
+    scroll-margin-top: 150px;
 }
 
 /* Styling for the Video Gallery */
@@ -377,6 +386,11 @@ button:hover {
     /* Adjust Scroll */
     .formSection {
         scroll-margin-top: 200px;
+    }
+
+    /*Adjust Scroll */
+    .section-header {
+        scroll-margin-top: 220px;
     }
 
 }
